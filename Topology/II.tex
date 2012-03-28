@@ -24,8 +24,8 @@
 \newtheorem{defn}{Определение}
 \newtheorem*{rem}{Замечание}
 
-\numberwithin{thm}{subsection}
-\numberwithin{defn}{subsection}
+\numberwithin{thm}{section}
+\numberwithin{defn}{section}
 
 \numberwithin{lem}{subsection}
 \numberwithin{prop}{subsection}
@@ -34,7 +34,7 @@
 \def\Int{{\rm Int }}
 \def\Ext{{\rm Ext }}
 \def\Bnd{\partial}
-\def\Cl{{\rm Cl }}
+\def\Cl #1{\overline{ #1}}
 
 \def \TI{{\bf T1 }}
 \def\TII{{\bf T2 }}
@@ -48,5 +48,6 @@
 \input{Lecture-3}
 \input{Lecture-4}
 \input{Lecture-5}
+\input{Lecture-6}
 
 \end{document}
