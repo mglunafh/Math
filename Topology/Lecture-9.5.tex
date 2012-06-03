@@ -7,8 +7,8 @@
 
 $$ \xymatrix
 { 
-C_{n+1} \ar[r]^d & C_n \ar[r]^d \ar[ld]_{s_n} \ar@{-->}[d]^f & C_{n-1} \ar[ld]^{s_{n-1}} \\
-D_{n+1} \ar[r]_d & C_n \ar[r]_d & D_{n-1} \\
+\cdots \ar[r] & C_{n+1} \ar[r]^d & C_n \ar[r]^d \ar[ld]_{s_n} \ar@{-->}[d]^{f_n} & C_{n-1} \ar[ld]^{s_{n-1}} \ar[r]& \cdots \\
+\cdots\ar[r] & D_{n+1} \ar[r]_d & C_n \ar[r]_d & D_{n-1} \ar[r] & \cdots\\
 }$$ 
 Достроим к этой диаграмме морфизм $f_n = s_nd_{n+1} +s_{n-1}d_n.$ Таким образом состряпанные вообще из какого-то произвольного набора $s_n$ морфизмы по всем $n\in \mathbb{Z}$ в итоге дают сразу морфизм комплексов. Это верно из следующих равенств, которые влекут коммутативность каких угодно квадратов, индексы я писать не буду, упражнением будет их дописать:
 $$ df = d(sd + ds) = dsd,$$
@@ -20,7 +20,7 @@ $$ fd = (sd + ds)d = dsd.$$
 
 \defin Морфизмы $f,g: C_\bullet \rightarrow D_\bullet$ называются гомотопными, если существует такая стягивающая гомотопия $s,$  что $f-g = sd + ds.$
 
-\defin Морфизм комплексов $f: C_\bullet \rightarrow D_\bullet$ --- гомотопическая эквивалентность, если найдется такой $g: D_\bullet \rightarrow C_\bullet$, что $f g = id_{C_\bullet}$ и  $g f = id_{D_\bullet}.$
+\defin Морфизм комплексов $f: C_\bullet \rightarrow D_\bullet$ --- гомотопическая эквивалентность, если найдется такой $g: D_\bullet \rightarrow C_\bullet$, что $f g \simeq id_{C_\bullet}$ и  $g f \simeq id_{D_\bullet}.$
 
 Осталось узнать, что такое расщепимые комплексы.
 
